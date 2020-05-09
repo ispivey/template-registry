@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "../javascript",
+    "target": "esnext",
+    "module": "esnext",
+    "sourceMap": false,
+    "experimentalDecorators": false,
+    "lib": ["esnext", "webworker"]
+  },
+  "include": [
+    "./*.ts",
+    "../../node_modules/@cloudflare/workers-types/index.d.ts"
+  ]
+}

@@ -6,12 +6,14 @@
   "author": "Victoria Bernard <bernard.victoria22@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@cloudflare/workers-types": "^1.0.9",
     "toml": "^3.0.0",
     "typescript": "^3.8.3"
   },
   "scripts": {
     "build": "cd workers-site && tsc -d",
     "format": "prettier --write './templates/**/*.{ts,js,css,json,md}'",
-    "start": "npm run build && wrangler preview --watch"
+    "start": "npm run build && wrangler preview --watch",
+    "transpile": "tsc --project ./templates/typescript"
   }
 }
